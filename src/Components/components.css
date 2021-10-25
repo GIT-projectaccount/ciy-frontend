@@ -1,0 +1,320 @@
+/* navbar css */
+.navbar{
+    position: sticky;
+    top: 0rem;
+    z-index: 1;
+}
+.navbar-nav{
+    font-size:1.2rem;
+}
+/* CIY-Cook it yourself css */
+.main-text{
+    font-size: 1.5rem;
+}
+/* casrousel css */
+.carousel-item{
+    height:50rem;
+    color:white;
+    position:relative;
+    background-size: cover;
+    background-position: center;
+    margin-top: 1rem;
+}
+.carousel-item::before{
+    content: "";
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom: 0;
+    background:black;
+    opacity: 0.2;
+}
+
+/* carousel slider css */
+/* slider 1 css */
+.slider-content1{
+    position: absolute;
+    bottom:25rem;
+    left:-45rem;
+    opacity: 0.9;
+}
+.slider-content1 p{
+    font-size: 2.5rem;
+}
+
+/* slider 2 css */
+.slider-content2{
+    position: absolute;
+    top:9rem;
+    left:19rem;
+    font-size: 2.3rem;
+    opacity:0.9;
+}
+
+/* slider 2 button css */
+.slider-btn .btn-1{
+    background-color: white;
+    color:black;
+    border-radius: 0;
+    padding:1rem 1rem;
+    font-size:1.5rem;
+    margin-top: 2rem;
+}
+
+/* slider 3 css */
+.slider-content3{
+    position: absolute;
+    top:10rem;
+    right:-50rem;
+    font-size: 2.2rem;
+    opacity:0.9;
+}
+
+.slider-btn .btn-2{
+    background-color: white;
+    color:black;
+    border-radius: 0;
+    padding:1rem 1rem;
+    font-size:1.3rem;
+    margin-top: 1rem;
+}
+
+/* hr css */
+hr.hr-1 {
+    height: 5px;
+    width: 100%;
+    color: black;
+    opacity: 0.9;
+    margin-top:0.5rem;
+}
+
+/* most popular dishes heading css */
+.mostpopular-heading{
+    color:black;
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-family:serif;
+}
+
+/* card css */
+.populardish-card{
+    border:2px solid black;
+    margin:1rem;
+}
+.card-img-top{
+    display:block;
+    margin:auto;
+    height: 15rem;
+    width: 20rem;
+    padding:0.5rem;
+}
+.card-title-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-title{
+    font-size: 2.2rem;
+    margin-bottom:1rem;
+}
+.card-text{
+    font-size: 1.3rem;
+}
+
+/* footer */
+.main-footer{
+    margin-top: 1rem;
+    border-top:5px solid black;
+}
+/* footer ciy logo */
+.ciy-logo{
+    margin: 2rem;
+}
+/* footer text */
+.footer-text{
+    padding:2rem;
+    text-shadow: 2px 2px black;
+    font-weight: 500;
+    font-size: 1.8rem;
+    color:white;
+}
+/* footer left section */
+.footer-left{
+    position: relative;
+    background-image: url(../images/footerimg1edited.jpg);
+    background-size: cover;
+    background-position: center;
+    border-right: 2px solid black;
+}
+.footer-left::before{
+    content: "";
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom: 0;
+    background-color: black;
+    opacity: 0.2;
+}
+/* footer right section */
+.footer-right{
+    position: relative;
+    background-image: url(../images/footerimg2edited.jpg);
+    background-size: cover;
+    background-position: center;
+    border-left: 2px solid black;
+}
+.footer-right::before{
+    content: "";
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom: 0;
+    background-color: black;
+    opacity: 0.2;
+}
+
+/* Beginner's guide css */
+/* bguide master heading */
+.bguide-master-heading{
+    font-size: 3rem;
+    color: black;
+}
+.master-heading-container{
+    margin-top: 1rem;
+    padding: 1rem;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+/* bguide images css */
+.bguide-img{
+    margin:2rem;
+    border:2px solid black;
+    height: 25rem;
+    width: 35rem;
+}
+/* bguide heading */
+.bguide-heading{
+    text-decoration: underline;
+    margin-top: 2rem;
+    font-size: 2.8rem;
+}
+/* bguide text css */
+.bguide-text{
+    font-size: 1.8rem;
+    padding-right: 2rem;
+    line-height: 3rem; 
+}
+.bguide3-mini-heading{
+    margin: 0;
+    padding: 0;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+/* signup css */
+/* signup container css */
+.form-container{
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 2rem;
+}
+/* signup bg img css */
+.signup-img{
+    margin-top: 1rem;
+    display: block;
+    height: 60rem;
+    width: 100%;
+    background-image: url(../images/signupbg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+/* signup heading css */
+.signup-heading{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+/* signup form css */
+.signup-form{
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: black;
+    margin: 2rem;
+}
+/* signup form input css */
+.input-bg{
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.signup-login-text{
+    color: blue;
+}
+
+/* login css */
+/* login img css */
+.login-img{
+    margin-top: 1rem;
+    display: block;
+    height: 60rem;
+    width: 100%;
+    background-image: url(../images/loginbg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.login-form{
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: black;
+    margin: 2rem;
+}
+.login-heading{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.login-signup-text{
+    color: blue;
+}
+/* Categories css*/
+/* categories master heading css */
+.categories-master-heading{
+    font-size: 3rem;
+    color: black;
+}
+/* category heading css */
+.category-type-heading{
+    font-size: 2.5rem;
+    margin-top: 1rem;
+}
+/* sub-category-container css */
+.sub-category-container{
+    border-bottom: 2px solid black;
+}
+/* category card css*/
+.category-card{
+    margin:1rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border: 2px solid black;
+    width: 20rem;
+}
+/* category card body css */
+.category-card-body{
+    padding: 0;
+}
+/* category card title css */
+.category-card-title{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    margin: 1rem;
+}
+/* category card text css */
+.category-card-text{
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    margin: 1rem;
+}
