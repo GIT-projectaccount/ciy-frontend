@@ -23,10 +23,6 @@ const Signup = () => {
                             <input type="password" className="form-control input-bg" id="userpassword" name="userpassword" size="50" required />
                         </div>
                         <div className="mb-3">
-                            <label htmlFor="userconfirmpassword" className="form-label">Confirm Password</label>
-                            <input type="password" className="form-control input-bg" id="userconfirmpassword" name="userconfirmpassword" size="50" required />
-                        </div>
-                        <div className="mb-3">
                             <label htmlFor="usersecurityquestion" className="form-label">Security Question - What is your favourite food dish?</label>
                             <input type="password" className="form-control input-bg" id="usersecurityquestion" name="usersecurityquestion" size="50" required />
                         </div>

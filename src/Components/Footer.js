@@ -11,7 +11,7 @@ const Footer = () => {
                     </p>
                 </div>
                 <div className="d-flex align-items-center justify-content-center flex-fill">
-                    <img src={ciylogo} height="250rem" width="300rem" alt="..." class="ciy-logo" />
+                    <img src={ciylogo} height="250rem" width="300rem" alt="..." className="ciy-logo" />
                 </div>
                 <div className="d-flex align-items-start justify-content-center flex-fill footer-right">
                     <p className="footer-text">
