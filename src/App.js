@@ -13,6 +13,7 @@ import Signup from './Components/Signup';
 import Login from './Components/Login';
 import Dishes from './Components/Dishes';
 import RecipeState from './context/recipes/RecipeState';
+import Dishpage from './Components/Dishpage';
 
 function App() {
 
@@ -39,6 +40,18 @@ function App() {
             </Route>
             <Route exact path="/dishes">
               <Dishes />
+            </Route>
+            <Route exact path="/breakfast">
+              <Dishes subcategory="Breakfast"/>
+            </Route>
+            <Route exact path="/lunch">
+              <Dishes subcategory="Lunch"/>
+            </Route>
+            <Route exact path="/dinner">
+              <Dishes subcategory="Dinner"/>
+            </Route>
+            <Route exact path="/dishpage">
+              <Dishpage />
             </Route>
           </Switch>
           <Footer />

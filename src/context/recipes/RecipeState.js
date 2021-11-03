@@ -7,7 +7,6 @@ const RecipeState = (props) => {
     const recipeInitial = [];
 
     const [recipe, setRecipe] = useState(recipeInitial);
-    const [breakfast, setBreakfast] = useState(recipeInitial);
 
     //Get all recipes
     const getRecipes = async () => {
@@ -22,23 +21,9 @@ const RecipeState = (props) => {
         setRecipe(json);
     }
 
-    //Get breakfast
-    const getBreakfast = async () => {
-        //API CALL
-        const response = await fetch(`${host}/api/ciyRecipe/breakfast`, {
-            method: "GET",
-            headers: {
-                "Content-Type": "application/json",
-            },
-        });
-        const json = await response.json();
-        setBreakfast(json);
-    }
-    
-
     return (
 
-        <RecipeContext.Provider value={{ recipe, getRecipes,breakfast,getBreakfast }}>
+        <RecipeContext.Provider value={{ recipe, getRecipes }}>
             {props.children}
         </RecipeContext.Provider>
     )

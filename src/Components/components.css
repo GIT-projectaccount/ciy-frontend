@@ -318,3 +318,34 @@ hr.hr-1 {
     font-size: 1.2rem;
     margin: 1rem;
 }
+/* Dishes css */
+/* dishes container css */
+.dishes-container{
+    border-bottom: 3px solid black;
+}
+/* Dishitem card css */
+/* Dish item card */
+.dishitem-card{
+    padding:0rem;
+    border: 2px solid black;
+    width: 20rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+/* dishitem-card-img css */
+.dishitem-card-img{
+    display: block;
+    margin:auto;
+    height: 15rem;
+    width: 15rem;
+}
+/* dish item card title container css */
+.dishitem-title-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* dish item card title css */
+.dishitem-card-title{
+    font-size: 2rem;
+}
