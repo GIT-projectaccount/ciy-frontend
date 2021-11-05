@@ -2,28 +2,18 @@ import RecipeContext from "./recipeContext";
 import { useState } from "react";
 
 const RecipeState = (props) => {
-    const host = "http://localhost:8000";
 
-    const recipeInitial = [];
+    const dishInitial = [];
 
-    const [recipe, setRecipe] = useState(recipeInitial);
+    const [dish, setDish] = useState(dishInitial);
 
-    //Get all recipes
-    const getRecipes = async () => {
-        //API CALL
-        const response = await fetch(`${host}/api/ciyRecipe/fetchallrecipe`, {
-            method: "GET",
-            headers: {
-                "Content-Type": "application/json",
-            },
-        });
-        const json = await response.json();
-        setRecipe(json);
+    const saveDish = (dish) => {
+        setDish(dish);
     }
 
     return (
 
-        <RecipeContext.Provider value={{ recipe, getRecipes }}>
+        <RecipeContext.Provider value={{ dish , saveDish}}>
             {props.children}
         </RecipeContext.Provider>
     )

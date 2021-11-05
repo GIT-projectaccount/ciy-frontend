@@ -24,6 +24,7 @@ const Dishes = (props) => {
 
     useEffect(() => {
         getRecipes();
+        //eslint-disable-next-line
     }, [])
 
     return (
