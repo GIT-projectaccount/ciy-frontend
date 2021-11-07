@@ -33,7 +33,7 @@ const Dishes = (props) => {
                 <div className="d-flex align-items-center justify-content-center master-heading-container">
                     <h2 className="categories-master-heading"> {props.subcategory} </h2>
                 </div>
-                <div className="d-flex justify-content-start dishes-container">
+                <div className="d-flex justify-content-start dishes-container row">
                     {recipe.map((recipe) => {
                         return <Dishitem key={recipe._id} recipe={recipe} />
                     })}

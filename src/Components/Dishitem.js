@@ -18,7 +18,7 @@ const Dishitem = (props) => {
 
     return (
         <>
-            <div className="d-flex justify-content-center mx-2">
+            <div className="d-flex justify-content-start mx-2 col">
                 <div className="card dishitem-card">
                     <div className="card-body">
                         <img src={recipe.image} className="dishitem-card-img" alt="..." />
