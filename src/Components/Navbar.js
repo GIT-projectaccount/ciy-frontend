@@ -8,37 +8,19 @@ const Navbar = () => {
     
     let history = useHistory();
 
-    const host = "http://localhost:8000";
-
     const context = useContext(recipeContext);
-    const { saveDish } = context;
+    const { saveSearchedDish } = context;
 
     const [searchedDish, setSearchedDish] = useState({Title:""});
 
-
-    const getSearchedDish = async () => {
-        //API CALL
-        const response = await fetch(`${host}/api/ciyRecipe/searchdish/${searchedDish.Title}`, {
-            method: "GET",
-            headers: {
-                "Content-Type": "application/json",
-            },
-        });
-        const json = await response.json();
-        saveDish(json);
-        console.log(json);
-    }
-
-    
     const onChange = (e)=> {
-        setSearchedDish({Title:e.target.value});        
+        setSearchedDish({Title:e.target.value});    
     }
 
     const handleSearchDish = async (e)=>{
         e.preventDefault();
-        console.log(searchedDish);
-        await getSearchedDish();
-        history.push("/dishpage");
+        saveSearchedDish(searchedDish.Title)
+        history.push("/Searcheddish");
     }
 
     return (
@@ -50,7 +32,7 @@ const Navbar = () => {
                     </div>
                     <div className="d-flex flex-fill justify-content-center">
                         <form className="d-flex">
-                            <input type="text" className="form-control" placeholder=" Search any dish" name="searchdishtext" size="30" onChange={onChange} minLength={5} />
+                            <input type="text" className="form-control" placeholder="Search any Dish" name="searchdishtext" id="searchdishtext" size="30" onChange={onChange} minLength={4} />
                             <Link className="btn btn-light mx-2" onClick={handleSearchDish}>Search</Link>
                         </form>
                     </div>

@@ -14,7 +14,7 @@ import Login from './Components/Login';
 import Dishes from './Components/Dishes';
 import RecipeState from './context/recipes/RecipeState';
 import Dishpage from './Components/Dishpage';
-import Nodishfound from './Components/Nodishfound';
+import Searcheddish from './Components/Searcheddish';
 
 function App() {
 
@@ -90,8 +90,8 @@ function App() {
             <Route exact path="/dishpage">
               <Dishpage />
             </Route>
-            <Route exact path="/nodishfound">
-              <Nodishfound/>
+            <Route exact path="/searcheddish">
+              <Searcheddish/>
             </Route>
           </Switch>
           <Footer />

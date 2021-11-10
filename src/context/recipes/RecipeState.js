@@ -4,8 +4,12 @@ import { useState } from "react";
 const RecipeState = (props) => {
 
     const dishInitial = [];
-    
+    const [searchedDish, setSearchedDish] = useState({title:""});
     const [dish, setDish] = useState(dishInitial);
+
+   const saveSearchedDish = (x) =>{
+        setSearchedDish({title:x});
+    }
 
     const saveDish = (dish) => {
         setDish(dish);
@@ -13,7 +17,7 @@ const RecipeState = (props) => {
 
     return (
 
-        <RecipeContext.Provider value={{ dish , saveDish }}>
+        <RecipeContext.Provider value={{ dish , saveDish , searchedDish, saveSearchedDish}}>
             {props.children}
         </RecipeContext.Provider>
     )

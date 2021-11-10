@@ -1,3 +1,31 @@
+html{
+    font-size: 100%;
+    
+}
+@media(max-width:1668px)
+{
+    html{
+        font-size: 80%;
+    }
+}
+@media(max-width:1337px)
+{
+    html{
+        font-size: 60%;
+    }
+}
+@media(max-width:1016px)
+{
+    html{
+        font-size: 50%;
+    }
+}
+@media(max-width:830px)
+{
+    html{
+        font-size: 40%;
+    }
+}
 /* navbar css */
 .navbar{
     position: sticky;
@@ -317,7 +345,7 @@ hr.hr-1 {
     text-decoration: none;
 }
 .category-link:hover{
-    color:grey;
+    color:black;
     text-decoration: underline;
 }
 /* category card text css */
@@ -357,5 +385,62 @@ hr.hr-1 {
 }
 /* dish item card title css */
 .dishitem-card-title{
+    color: black;
     font-size: 2rem;
+    text-decoration: none;
+}
+.dishitem-card-title:hover{
+    color:black;
+    text-decoration: underline;
+}
+
+/* Dishpage css */
+/* dishpage image css */
+.dishpage-img
+{
+    border: 2px solid black;
+    height: 25em;
+    width: 30rem;
+    margin:1rem;
+}
+/* dishpage description css*/
+/* dishpage description heading css */
+.dishpage-description-heading{
+    font-size: 3rem;
+    font-weight: 500;
+    margin: 1rem;
+    text-decoration: underline;
+}
+/* dishpage description css */
+.dishpage-description{
+    font-size: 2rem;
+    margin: 1rem;
+}
+/* dishpage ingredients css*/
+/* dishpage ingredients container css */
+.dishpage-ingredients-container{
+    border: 1px solid black;
+    margin: 1rem;
+}
+/* dishpage ingredients heading css*/
+.dishpage-ingredients-heading{
+    font-size: 3rem;
+    font-weight: 500;
+    margin: 1rem;
+    text-decoration: underline;
+}
+/* dishpage ingredients css*/
+.dishpage-ingredients{
+    font-size: 2rem;
+    margin: 1rem;
+}
+/*  */
+.dishpage-ingredients-list{
+    list-style-type: none;
+    margin:1rem;
+}
+/*  */
+.dishpage-ingredients-checkbox{
+    height: 1.5rem;
+    width: 1.5rem;
 }

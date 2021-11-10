@@ -24,7 +24,7 @@ const Dishitem = (props) => {
                         <img src={recipe.image} className="dishitem-card-img" alt="..." />
                     </div>
                     <div className="dishitem-title-container">
-                        <h5 className="card-title dishitem-card-title" onClick={handleDishpage}> <Link to="/dishpage"> {recipe.title} </Link> </h5>
+                        <h5 className="card-title" onClick={handleDishpage}> <Link to="/dishpage" className="dishitem-card-title"> {recipe.title} </Link> </h5>
                     </div>
                 </div>
             </div>
