@@ -1,6 +1,5 @@
 html{
     font-size: 100%;
-    
 }
 @media(max-width:1668px)
 {
@@ -25,7 +24,24 @@ html{
     html{
         font-size: 40%;
     }
+    .ciy-logo{
+        height:25rem;
+        width:30rem;
+        margin: 1rem;
+    }
 }
+@media(max-width:668px)
+{
+    html{
+        font-size: 30%;
+    }
+    .ciy-logo{
+        height:25rem;
+        width:30rem;
+        margin: 1rem;
+    }
+}
+
 /* navbar css */
 .navbar{
     position: sticky;
@@ -429,17 +445,17 @@ hr.hr-1 {
     margin: 1rem;
     text-decoration: underline;
 }
-/* dishpage ingredients css*/
+/* dishpage text css*/
 .dishpage-ingredients{
     font-size: 2rem;
     margin: 1rem;
 }
-/*  */
+/* dishpage list css */
 .dishpage-ingredients-list{
     list-style-type: none;
     margin:1rem;
 }
-/*  */
+/* dishpage checkbox css  */
 .dishpage-ingredients-checkbox{
     height: 1.5rem;
     width: 1.5rem;

@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Carousel from './Carousel'
-import Populardish from './Populardish'
+import Randomdish from './Randomdish'
 
 const Home = () => {
     return (
@@ -9,8 +9,7 @@ const Home = () => {
             <div className="container-fluid">
                 <Carousel/>
                 <hr className="hr-1"/>
-                <Populardish/>
-                <hr className="hr-1"/>
+                <Randomdish/>
             </div>
         </>
     )
