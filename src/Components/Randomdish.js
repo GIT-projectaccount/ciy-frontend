@@ -3,7 +3,9 @@ import Dishitem from './Dishitem';
 
 const Randomdish = () => {
 
-    const host = "http://localhost:8000";
+    const host = process.env.REACT_APP_BACKEND_HOST;
+    // const host = "http://localhost:8000"
+
 
     const initialrecipestate = [];
     const [recipe, setRecipe] = useState(initialrecipestate);
@@ -26,7 +28,7 @@ const Randomdish = () => {
         getRandomRecipes();
         //eslint-disable-next-line
     }, [])
-    
+
     return (
         <>
             <div className="d-flex justify-content-center">
@@ -39,8 +41,8 @@ const Randomdish = () => {
                     })}
                 </div>
             </div>
-            
-            
+
+
         </>
     )
 }

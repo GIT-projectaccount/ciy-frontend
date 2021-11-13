@@ -7,6 +7,8 @@ const Signup = () => {
 
     const [credentials, setCredentials] = useState({ username: "", useremail: "", userpassword: "", usersecurityquestion: "" });
 
+    const host = process.env.REACT_APP_BACKEND_HOST;
+
     const onChange = (e) => {
         setCredentials({ ...credentials, [e.target.name]: e.target.value });
     }
@@ -14,7 +16,7 @@ const Signup = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         const { username, useremail, userpassword, usersecurityquestion } = credentials;
-        const response = await fetch("http://localhost:8000/api/auth/createuser", {
+        const response = await fetch(`${host}/api/auth/createuser`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -26,7 +28,7 @@ const Signup = () => {
         if (json.success) {
             history.push("/login");
         }
-        else{
+        else {
             history.push("/");
         }
     }
@@ -63,7 +65,7 @@ const Signup = () => {
                             Already have an account? <Link to="/login" className="mx-2 signup-login-text"> Click here to Login.</Link>
                         </div>
                     </form>
-                    
+
                 </div>
             </div>
         </>

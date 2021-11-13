@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react'
 import Dishitem from './Dishitem';
 
 const Dishes = (props) => {
-    const host = "http://localhost:8000";
+    // const host = "http://localhost:8000";
+    const host = process.env.REACT_APP_BACKEND_HOST;
 
     const initialrecipestate = [];
     const [recipe, setRecipe] = useState(initialrecipestate);
@@ -39,7 +40,7 @@ const Dishes = (props) => {
                     })}
                 </div>
             </div>
-            
+
         </>
     )
 }
