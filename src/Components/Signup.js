@@ -24,7 +24,6 @@ const Signup = () => {
             body: JSON.stringify({ name: username, email: useremail, password: userpassword, securityquestion: usersecurityquestion })
         });
         const json = await response.json();
-        console.log(json.authToken);
         if (json.success) {
             history.push("/login");
         }

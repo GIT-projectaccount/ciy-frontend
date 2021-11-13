@@ -24,8 +24,6 @@ const Searcheddish = () => {
             });
             const json = await response.json();
             setDishResults(json);
-            console.log(json);
-            console.log(searchedDish);
         }
 
         getSearchedDish();

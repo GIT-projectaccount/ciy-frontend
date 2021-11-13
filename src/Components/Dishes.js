@@ -19,7 +19,6 @@ const Dishes = (props) => {
         });
         const json = await response.json();
         setRecipe(json);
-        console.log(json);
     }
 
 

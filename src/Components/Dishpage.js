@@ -1,11 +1,10 @@
 import React, { useContext } from 'react'
 import recipeContext from '../context/recipes/recipeContext';
 
-const Dishpage = (props) => {
+const Dishpage = () => {
 
     const context = useContext(recipeContext);
     const { dish } = context;
-    console.log(dish);
 
     return (
         <>
@@ -27,7 +26,7 @@ const Dishpage = (props) => {
                     </div>
                 </div>
                 <div className="dishpage-ingredients-container">
-                    <div>                            
+                    <div>
                         <h4 className="dishpage-ingredients-heading"> Ingredients</h4>
                         <p className="dishpage-ingredients">
                             {dish.ingredients.map((item, index) =>

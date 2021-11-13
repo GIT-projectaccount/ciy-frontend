@@ -4,7 +4,6 @@ import Dishitem from './Dishitem';
 const Randomdish = () => {
 
     const host = process.env.REACT_APP_BACKEND_HOST;
-    // const host = "http://localhost:8000"
 
 
     const initialrecipestate = [];
@@ -21,7 +20,6 @@ const Randomdish = () => {
         });
         const json = await response.json();
         setRecipe(json);
-        console.log(json);
     }
 
     useEffect(() => {
