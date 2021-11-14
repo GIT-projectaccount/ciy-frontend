@@ -30,36 +30,64 @@ html{
         margin: 1rem;
     }
 }
-@media(max-width:668px)
+@media (min-width:499px) and (max-width:668px)
 {
     html,body{
         height: 100%;
         width: 100%;
         margin: 0;
         padding: 0;
-        overflow:hidden;
-        font-size: 30%;
+        overflow: auto;
     }
     .ciy-logo{
         height:25rem;
         width:30rem;
         margin: 1rem;
     }
+    .dishpage-img
+    {
+        border: 2px solid black;
+        height: 80rem;
+        width: 30rem;
+        margin:1rem;
+    }
+    p.slider-content1 {
+        font-size: 1.8rem;
+        left: -22rem;
+    }
+    
+    p.slider-content3{
+        right: -18rem;
+    } 
 }
-@media(min-width:375px) and (max-width:512px)
+@media (min-width:360px) and (max-width:498px)
 {
     html,body{
         height: 100%;
         width: 100%;
         margin: 0;
         padding: 0;
-        overflow:hidden;
-        font-size: 20%;
+        overflow: auto;
     }
     .ciy-logo{
         height:25rem;
         width:30rem;
         margin: 1rem;
+    }
+    .dishpage-img
+    {
+        border: 2px solid black;
+        height: 80rem;
+        width: 30rem;
+        margin:1rem;
+    }
+    p.slider-content1 {
+        font-size: 1.2rem;
+        left: -15rem;
+    }
+    p.slider-content3{
+        font-size: 1.5rem;
+        right: -15rem;
     }
 }
 
@@ -83,6 +111,7 @@ html{
     position:relative;
     background-size: cover;
     background-position: center;
+    background-repeat: repeat;
     margin-top: 1rem;
 }
 .carousel-item::before{
@@ -99,20 +128,17 @@ html{
 /* carousel slider css */
 /* slider 1 css */
 .slider-content1{
-    position: absolute;
-    bottom:25rem;
-    left:-45rem;
+    position: relative;
     opacity: 0.9;
-}
-.slider-content1 p{
     font-size: 2.5rem;
+    bottom: 17rem;
+    left: -30rem;
 }
 
 /* slider 2 css */
 .slider-content2{
-    position: absolute;
-    top:9rem;
-    left:19rem;
+    position: relative;
+    bottom: 30rem;
     font-size: 2.3rem;
     opacity:0.9;
 }
@@ -129,15 +155,15 @@ html{
 
 /* slider 3 css */
 .slider-content3{
-    position: absolute;
-    top:10rem;
-    right:-50rem;
+    position: relative;
+    bottom: 20rem;
+    right: -30rem;
     font-size: 2.2rem;
     opacity:0.9;
 }
 
 .slider-btn .btn-2{
-    background-color:white;
+    background-color: white;
     color:black;
     border-radius: 0;
     padding:1rem 1rem;
@@ -193,7 +219,6 @@ hr.hr-1 {
     margin-top: 1rem;
     border-top:5px solid black;
 }
-
 /* footer ciy logo */
 .ciy-logo{
     margin: 2rem;

@@ -11,27 +11,21 @@ const Carousel = () => {
                 <div className="carousel-inner">
                     <div className="carousel-item active">
                         <img src={cbg1} className="d-block w-100 h-100" alt="..." />
-                        <div className="carousel-caption slider-content1">
-                            <p>CIY is a cooking and recipe website <br /> dedicated with love and authenticity <br /> to Indian cuisine only.</p>
+                        <div className="carousel-caption">
+                            <p className="slider-content1">CIY is a cooking and recipe website <br /> dedicated with love and authenticity <br /> to Indian cuisine only.</p>
                         </div>
                     </div>
 
                     <div className="carousel-item">
                         <img src={cbg2} className="d-block w-100 h-100" alt="..." />
-                        <div className="carousel-caption slider-content2">
-                            <p>From Breakfast to Lunch, Sweet to Spicy and Creamy to Crispy Food Recipes.</p>
-                            <div className="slider-btn">
-                                <Link className="btn btn-1" to="/categories"> Browse Categories</Link>
-                            </div>
+                        <div className="carousel-caption">
+                            <p className="slider-content2">From Breakfast to Lunch, Sweet to Spicy and Creamy to Crispy Food Recipes.</p>
                         </div>
                     </div>
                     <div className="carousel-item">
                         <img src={cbg3} className="d-block w-100 h-100" alt="..." />
-                        <div className="carousel-caption slider-content3">
-                            <p>New to cooking? <br /> Perfect! <br /> We have a guide for beginners.</p>
-                            <div className="slider-btn">
-                                <Link className="btn btn-2" to="/bguide"> Check it out</Link>
-                            </div>
+                        <div className="carousel-caption">
+                            <p className="slider-content3">New to cooking? <br /> Perfect! <br /> We have a guide for beginners.</p>
                         </div>
                     </div>
                 </div>
