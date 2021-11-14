@@ -46,6 +46,22 @@ html{
         margin: 1rem;
     }
 }
+@media(min-width:375px) and (max-width:512px)
+{
+    html,body{
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow:hidden;
+        font-size: 20%;
+    }
+    .ciy-logo{
+        height:25rem;
+        width:30rem;
+        margin: 1rem;
+    }
+}
 
 /* navbar css */
 .navbar{
@@ -121,7 +137,7 @@ html{
 }
 
 .slider-btn .btn-2{
-    background-color:transparent;
+    background-color:white;
     color:black;
     border-radius: 0;
     padding:1rem 1rem;
