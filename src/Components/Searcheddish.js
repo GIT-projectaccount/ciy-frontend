@@ -27,6 +27,7 @@ const Searcheddish = () => {
         }
 
         getSearchedDish();
+        window.scrollTo(0, 0);
     }, [searchedDish])
     return (
         <>

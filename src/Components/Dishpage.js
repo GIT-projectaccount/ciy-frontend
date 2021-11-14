@@ -1,7 +1,13 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import recipeContext from '../context/recipes/recipeContext';
 
+
+
 const Dishpage = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
 
     const context = useContext(recipeContext);
     const { dish } = context;

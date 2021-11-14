@@ -24,6 +24,7 @@ const Dishes = (props) => {
 
     useEffect(() => {
         getRecipes();
+        window.scrollTo(0, 0);
         //eslint-disable-next-line
     }, [])
 

@@ -32,7 +32,12 @@ html{
 }
 @media(max-width:668px)
 {
-    html{
+    html,body{
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow:hidden;
         font-size: 30%;
     }
     .ciy-logo{
@@ -116,7 +121,7 @@ html{
 }
 
 .slider-btn .btn-2{
-    background-color: white;
+    background-color:transparent;
     color:black;
     border-radius: 0;
     padding:1rem 1rem;
@@ -172,6 +177,7 @@ hr.hr-1 {
     margin-top: 1rem;
     border-top:5px solid black;
 }
+
 /* footer ciy logo */
 .ciy-logo{
     margin: 2rem;

@@ -24,13 +24,14 @@ const Randomdish = () => {
 
     useEffect(() => {
         getRandomRecipes();
+        window.scrollTo(0, 0);
         //eslint-disable-next-line
     }, [])
 
     return (
         <>
             <div className="d-flex justify-content-center">
-                <h3 className="mostpopular-heading"> You can also try : </h3>
+                <h3 className="mostpopular-heading"> CIY Recommendations </h3>
             </div>
             <div className="container-fluid">
                 <div className="d-flex justify-content-start dishes-container row">

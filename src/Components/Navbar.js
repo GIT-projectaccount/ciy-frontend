@@ -21,7 +21,8 @@ const Navbar = () => {
 
     const handleSearchDish = async (e) => {
         e.preventDefault();
-        saveSearchedDish(searchedDish.Title)
+        saveSearchedDish(searchedDish.Title);
+        setSearchedDish({ Title: '' })
         history.push("/Searcheddish");
     }
 
@@ -43,7 +44,7 @@ const Navbar = () => {
                     </div>
                     <div className="d-flex flex-fill justify-content-center">
                         <form className="d-flex">
-                            <input type="text" className="form-control" placeholder="Search any Dish" name="searchdishtext" id="searchdishtext" size="30" onChange={onChange} minLength={4} />
+                            <input type="text" value={searchedDish.Title} className="form-control" placeholder="Search any Dish" name="searchdishtext" id="searchdishtext" size="30" onChange={onChange} minLength={4} />
                             <button className="btn btn-light mx-2" onClick={handleSearchDish}>Search</button>
                         </form>
                     </div>
